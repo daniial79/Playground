@@ -6,7 +6,7 @@ It’s designed to showcase **clean architecture principles**, **separation of c
 
 ## Inspiration
 
-This project was inspired by the [Task Tracker roadmap on Roadmap.sh](https://roadmap.sh/projects/task-tracker), which guided the architecture, feature set, and best practices followed in this CLI-based Todo app.
+This project was inspired by the [Task Tracker roadmap on Roadmap.sh](https://roadmap.sh/projects/task-tracker)
 
 ---
 
@@ -65,22 +65,22 @@ The project follows a **clean, layered architecture**:
 ---
 
 ## Project Structure
-.
-├── data.json # Persistent data store
-├── TodoCLI # Main project
-│ ├── Application
-│ │ ├── Processor.cs
-│ │ └── Responses
-│ │ ├── ReadResponse.cs
-│ │ └── WriteResponse.cs
-│ ├── Infrastructure
-│ │ ├── Contracts/IDataAccess.cs
-│ │ └── DataAccess.cs
-│ ├── Logger/Logger.cs
-│ ├── Models/Todo.cs
-│ └── UI/UI.cs
-└── Todo.sln
 
+.
+├── data.json               # Persistent data store
+├── TodoCLI                 # Main project
+│   ├── Application
+│   │   ├── Processor.cs
+│   │   └── Responses
+│   │       ├── ReadResponse.cs
+│   │       └── WriteResponse.cs
+│   ├── Infrastructure
+│   │   ├── Contracts/IDataAccess.cs
+│   │   └── DataAccess.cs
+│   ├── Logger/Logger.cs
+│   ├── Models/Todo.cs
+│   └── UI/UI.cs
+└── Todo.sln
 
 ---
 
