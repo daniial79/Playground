@@ -17,7 +17,6 @@ This project was inspired by the [Task Tracker roadmap on Roadmap.sh](https://ro
 - [Project Structure](#project-structure)  
 - [Commands](#commands)  
 - [Error Handling & Logging](#error-handling--logging)  
-- [Technical Highlights](#technical-highlights)   
 
 ---
 
@@ -129,11 +128,3 @@ todo get 1
 | Any other Exception     | "Operation failed."           | Full stack trace       |
 
 - Logger includes **timestamp**, **exception type**, and **message** for debugging purposes.
-
-## Technical Highlights
-
-- **Atomic file writes** using `.tmp` file + `File.Move()` to prevent data loss.
-- `FirstOrDefault` returns **reference**, allowing direct updates to objects inside a collection.
-- **Immutable vs mutable design**: `Todo.Id` and `CreatedAt` are `init`-only to prevent accidental mutation.
-- **Layered separation** allows unit testing and future expansion (e.g., database integration).
-- **CLI-first UX** with argument validation and helpful feedback.
