@@ -65,7 +65,7 @@ The project follows a **clean, layered architecture**:
 ---
 
 ## Project Structure
-
+```
 .
 ├── data.json               # Persistent data store
 ├── TodoCLI                 # Main project
@@ -81,6 +81,7 @@ The project follows a **clean, layered architecture**:
 │   ├── Models/Todo.cs
 │   └── UI/UI.cs
 └── Todo.sln
+```
 
 ---
 
